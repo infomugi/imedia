@@ -1,0 +1,3 @@
+#contact > header p#confirm-message {border-radius: 5px;z-index: 1; position: absolute; top: -50px; background: none repeat scroll 0% 0% white; color: #24dc97 !important; left: 0px; padding: 10px 0px; width: 100%;}
+#gaq-form p#confirm-message {position: absolute; right: 0px; top: 231px; color: #24dc97; text-align: right;}
+#contact > header p#confirm-message  span {padding-left:20px;}

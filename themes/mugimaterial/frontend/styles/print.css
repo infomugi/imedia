@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* -------------------------------------------
+
+	Name: 		Rewalk (print)
+	Date:		2014/07/18
+	Author:		http://darwinthemes.com
+		   		   
+---------------------------------------------  */
+* { margin: 0; padding: 0; }
+@page { margin: .5cm; }
+
+html { font-size: 100.01%; }
+body { background: #fff; font-size: 60%; }
+
+body, textarea, input, select, option, button { color: #000; font-family: Calibri, Helvetica, Arial, sans-serif; line-height: 1.4; }
+li, dt, dd, p, figure, th, td, caption, pre, legend { font-size: 1.5em; } /*---*/ li *, li li, dt *, dd *, p *, figure *, th *, td *, legend * { font-size: 1em; }
+ul, ol, dl, p, figure, table, pre, h1, h2, h3, h4, h5, h6, legend { margin-bottom: 1em; }
+
+article, aside, div, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; margin-bottom: 2em; }
+	
+	
+/*! Layout --------- */
+#top { margin: 0 0 1em; padding: 0 0 0.5em; border-bottom: 1px solid #ccc; }
+	#top h1 a { color: #000; text-decoration: none; }
+#content { }
+	#content a:after { content: " (" attr(href) ") "; color: #555; font-size: 0.8em; font-style: italic; }
+	#content a[href^="#"]:after { content: ""; }
+#footer { margin: 1em 0 0; padding: 1em 0 0; border-top: 1px solid #ccc; }
+
+
+/*! Columns --------- */
+
+
+/*! Modules --------- */
+.gallery-a, .gallery-b { overflow: hidden; list-style: none; width: 100%; padding: 0; }
+	.gallery-a li, .gallery-b li { float: left; width: 32%; padding: 0 1.333% 10px 0; }
+
+.list-c { list-style: none; padding: 0; }
+	.list-c li { margin-bottom: .5em; }
+	.list-c li > span:first-child { display: block; font-weight: 700; }
+.list-d { list-style: none; padding: 0; }
+.list-f { list-style: none; padding: 0; }
+	.list-f > li { margin-bottom: 1em; }
+	.list-f > li > span span { font-weight: 700; }
+
+.news-a { }
+	.news-a header ul { list-style: none; padding: 0; }
+	.news-a header ul img { display: block; }
+	
+
+/*! Defaults --------- */
+h1, h2, h3, h4, h5, h6 { margin: 1.25em 0 0.5em; color: #000; font-family: Cambria, Georgia, serif; }
+h2, h3 { page-break-after: avoid; }
+	h1 { margin-top: 0; font-size: 2.4em; }
+	h2 { font-size: 2.0em; }
+	h3 { font-size: 1.8em; }
+	h4 { font-size: 1.6em; }
+	h5 { font-size: 1.5em; text-transform: uppercase; }
+	h6 { font-size: 1.4em; text-transform: uppercase; }
+p, h2, h3 { orphans: 3; widows: 3; }
+
+a { color: #09f; text-decoration: underline; }
+
+img { max-width: 100% !important; height: auto !important; border-width: 0; image-rendering: optimizeQuality; -ms-interpolation-mode: bicubic; }
+tr, img { page-break-inside: avoid; }
+
+ul, ol, dd, blockquote { padding-left: 2em; }
+	ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
+
+table { display: table; border-collapse: collapse; border-spacing: 0; }
+	table th, table td { padding: 0.3em 0.6em; border: 1px solid #ccc; }
+
+.slider-a div, .list-c div, .list-d div { left: 0 !important; float: none !important; width: auto !important; height: auto !important; }
+
+
+/*! Hiding --------- */
+#skip, nav, form, [class^="icon-"], .list-select-a, #top figure, video, #footer > p a, #top .list-b, .link-b, .link-c, .link-a, .link-d, .notice-a, #welcome, .social-a, .link-e, #welcome, #contact figure, .video, .gallery-a a, .gallery-b a, .gallery-a ul, .gallery-b ul, .bx-prev, .bx-next, .bx-controls, .logo-a, .list-f a, .quote-a img, .gallery-a br, .gallery-b br, .normal, .mobile-only, .list-c a { position: absolute; left: -3000em; top: -3000em; }

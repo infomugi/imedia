@@ -1,0 +1,1 @@
+<li><?php echo CHtml::link(CHtml::encode($data->name), array('view', 'id'=>$data->id_category)); ?><span>122</span></li>
